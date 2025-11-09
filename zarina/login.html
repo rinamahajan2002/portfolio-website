@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zarina - Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zarina - Login</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #ffe4ec; /* Light pink shade */
+      background-color: #ffe4ec;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: purple;
       margin: 0;
@@ -15,22 +15,21 @@
     }
     header {
       text-align: center;
-      padding: 10px 20px 0 20px; /* Reduced top and bottom padding */
+      padding: 10px 20px 0 20px;
     }
     header img {
       width: 100px;
       height: 100px;
-      border-radius: 50%; /* Make logo circular */
+      border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 5px; /* Reduce gap between logo and heading */
+      margin-bottom: 5px;
     }
     h1 {
       font-size: 3em;
-      font-weight: bold;
       color: deeppink;
       font-style: italic;
       font-family: 'Pacifico', cursive;
-      margin-top: 0; /* Remove default margin from heading */
+      margin-top: 0;
     }
     nav {
       display: flex;
@@ -45,31 +44,45 @@
       font-weight: bold;
       color: purple;
     }
-    section {
+    .login-container {
+      background-color: white;
+      max-width: 400px;
+      margin: 40px auto;
       padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
       text-align: center;
     }
-    .home-img {
-      width: 40%;
-      max-width: 300px;
-      border-radius: 10px;
-    }
-    .div-section {
-      background-color: white;
-      margin: 20px;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    span {
-      color: #0000FF; /* Blue */
-    }
-    .categories {
+    label {
+      display: block;
       margin-top: 15px;
-      font-size: 1.2em;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: deeppink;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: hotpink;
     }
     footer {
       text-align: center;
-      background-color: #fefefe; /* Light white shade */
+      background-color: #fefefe;
       padding: 15px;
       color: black;
     }
@@ -95,20 +108,18 @@
     <a href="logout.html">Logout</a>
   </nav>
 
-  <section>
-    <div class="div-section">
-      <h2>Welcome to Zarina 👑</h2>
-      <p><span>Discover royal beauty and timeless pieces just for you.</span></p>
-      <img src="home-image.png" alt="Jewellery Showcase" class="home-img">
-    </div>
+  <div class="login-container">
+    <h2>Login to Zarina 💖</h2>
+    <form action="thankyou.html" method="get">
+      <label for="username">Username or Email:</label>
+      <input type="text" id="username" name="username" required>
 
-    <div class="div-section">
-      <h3>Our Categories 💫</h3>
-      <div class="categories">
-        💖 Necklace | ✨ Earrings | 💍 Rings | 🧿 Bracelet | 🎀 Bangles | 🌸 Nosepin
-      </div>
-    </div>
-  </section>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
 
   <footer>
     <p>© 2025 Zarina Jewellery Store. All rights reserved.</p>

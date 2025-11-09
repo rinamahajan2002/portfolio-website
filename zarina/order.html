@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zarina - Order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffe4ec;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: purple;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 10px;
+    }
+    header img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 5px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: deeppink;
+      font-family: 'Pacifico', cursive;
+      margin-top: 0;
+    }
+    .order-form {
+      background-color: white;
+      width: 90%;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .order-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .order-form input, .order-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .order-form button {
+      background-color: deeppink;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .order-form button:hover {
+      background-color: hotpink;
+    }
+    footer {
+      text-align: center;
+      background-color: #fefefe;
+      padding: 15px;
+      color: black;
+    }
+    footer img {
+      width: 100px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Zarina Logo">
+    <h1>Zarina 💎</h1>
+  </header>
+
+  <div class="order-form">
+    <h2>🛒 Complete Your Order</h2>
+    <form action="thankyou.html" method="GET">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="address">Delivery Address</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Zarina Jewellery Store. All rights reserved.</p>
+    <img src="footer.png" alt="Footer Decoration">
+  </footer>
+</body>
+</html>

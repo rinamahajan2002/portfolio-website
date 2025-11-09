@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zarina - Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffe4ec;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: purple;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 10px 20px 0 20px;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 5px;
+    }
+    h1 {
+      font-size: 3em;
+      color: deeppink;
+      font-style: italic;
+      font-family: 'Pacifico', cursive;
+      margin-top: 0;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffb6c1;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: purple;
+    }
+    .register-container {
+      background-color: white;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: deeppink;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: hotpink;
+    }
+    footer {
+      text-align: center;
+      background-color: #fefefe;
+      padding: 15px;
+      color: black;
+    }
+    footer img {
+      width: 100px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Zarina Logo">
+    <h1>Zarina 💎</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="order.html">Order</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="settings.html">Settings</a>
+    <a href="logout.html">Logout</a>
+  </nav>
+
+  <div class="register-container">
+    <h2>Create an Account ✨</h2>
+    <form action="thankyou.html" method="get">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" name="confirm" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Zarina Jewellery Store. All rights reserved.</p>
+    <img src="footer.png" alt="Footer Decorative Image">
+  </footer>
+</body>
+</html>
