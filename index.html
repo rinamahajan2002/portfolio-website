@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rina Mahajan — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <div class="brand">Rina Mahajan</div>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#home" data-target="home" class="nav-link active">Home</a></li>
+        <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+        <li><a href="#skills" data-target="skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" data-target="education" class="nav-link">Education</a></li>
+        <li><a href="#projects" data-target="projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" data-target="resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="section section--home active-section">
+      <div class="container hero">
+        <div class="hero-left">
+          <img src="images/rina-photo.png" alt="Rina Mahajan" class="profile-photo floating" />
+        </div>
+        <div class="hero-right">
+          <h1 class="hero-title">Hi, I'm <span class="accent">Rina Mahajan</span></h1>
+          <p class="hero-sub">Frontend Developer & Web Designer</p>
+          <a class="btn btn-primary" id="hire-me" href="#contact" data-target="contact">Hire Me</a>
+          <p class="hero-small">Languages: English · Hindi · Marathi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m Rina — an MCA student at SNDT Women's University and a passionate frontend developer who loves
+          crafting user-friendly, responsive, and aesthetic web experiences using HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li class="skill">HTML5</li>
+          <li class="skill">CSS3</li>
+          <li class="skill">JavaScript</li>
+          <li class="skill">Responsive Design</li>
+          <li class="skill">Git & GitHub</li>
+          <li class="skill">React (Basics)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-grid">
+          <article class="edu-card">
+            <h3>MCA Final Year (Pursuing)</h3>
+            <p><strong>University:</strong> SNDT Women's University, Mumbai</p>
+            <p><strong>Year:</strong> 2026</p>
+          </article>
+          <article class="edu-card">
+            <h3>MCA First Year</h3>
+            <p><strong>University:</strong> SNDT Women's University</p>
+            <p><strong>Year:</strong> 2025</p>
+            <p><strong>CGPA:</strong> 8.01</p>
+          </article>
+          <article class="edu-card">
+            <h3>BSc Computer Science</h3>
+            <p><strong>College:</strong> Moolji Jaitha College, Jalgaon</p>
+            <p><strong>Year:</strong> 2024</p>
+            <p><strong>CGPA:</strong> 8.36</p>
+          </article>
+          <article class="edu-card">
+            <h3>12th HSC</h3>
+            <p><strong>College:</strong> Swami Vivekanand Bhavan, MJ College</p>
+            <p><strong>Year:</strong> 2020</p>
+            <p><strong>Marks:</strong> 73.38%</p>
+          </article>
+          <article class="edu-card">
+            <h3>10th SSC</h3>
+            <p><strong>School:</strong> Roseland English Medium High School, Jalgaon</p>
+            <p><strong>Year:</strong> 2018</p>
+            <p><strong>Marks:</strong> 90.80%</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3><a href="zarina/index.html" target="_blank">Zarina — Brand Website</a></h3>
+            <p>Responsive landing page with custom design elements built using HTML & CSS.</p>
+          </article>
+          <article class="project-card">
+            <h3><a href="salon-website/index.html" target="_blank">Salon Website</a></h3>
+            <p>Minimal modern salon layout optimized for all screens.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container resume-container">
+        <h2>Resume</h2>
+        <p>Download my resume for more details.</p>
+        <a class="btn btn-primary btn-resume" href="assets/Rina_Resume.pdf" download>Download Resume</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          <button class="btn" type="submit">Send Message</button>
+          <p id="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-info">
+          <p>Email: <a href="mailto:rinamahajan2002@gmail.com">rinamahajan2002@gmail.com</a></p>
+          <p>Mobile: +91 8010732056</p>
+          <p class="social">
+            <a href="https://www.linkedin.com/in/rina-mahajan-8690322ab" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Rina Mahajan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
